@@ -52,3 +52,4 @@ steps:
   env:
     pswd: $(dockerPassword)
   displayName: 'Build and push Docker image'
+  
