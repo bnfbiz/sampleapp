@@ -36,7 +36,7 @@ steps:
 
 - script: |
     pushd '$(projectRoot)'
-    python src/opensourcelist.py --no-input
+    python server/opensourcelist.py --no-input
   condition: succeededOrFailed()
   displayName: 'Run tests'
 
