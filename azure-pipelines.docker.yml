@@ -40,10 +40,10 @@ steps:
   condition: succeededOrFailed()
   displayName: 'Run tests'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFiles: "**/TEST-*.xml"
-    testRunTitle: 'Python $(PYTHON_VERSION)'
+# - task: PublishTestResults@2
+#   inputs:
+#     testResultsFiles: "**/TEST-*.xml"
+#     testRunTitle: 'Python $(PYTHON_VERSION)'
 
 - script: |
     docker build -f Dockerfile -t $(dockerId)/$(imageName) .
