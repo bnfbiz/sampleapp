@@ -21,7 +21,10 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    pushd '$(projectRoot)'
+    python server/api.py
+  displayName: 'Run server'
+
+- script: |
     python server/test_api.py
   condition: succeededOrFailed()
   displayName: 'Run tests'
