@@ -40,7 +40,7 @@ class TestRESTApp(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(
-        #testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
+        testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
         # these make sure thta some options that are not applicable
         # remain hidden from the help menu
         failfast=False, buffer=False, catchbreak=False

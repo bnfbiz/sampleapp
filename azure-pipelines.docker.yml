@@ -22,7 +22,7 @@ steps:
 
 - script: |
     pushd '$(projectRoot)'
-    python server/test_api.py --no-input
+    python server/test_api.py
   condition: succeededOrFailed()
   displayName: 'Run tests'
 
