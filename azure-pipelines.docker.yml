@@ -21,7 +21,7 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
-    python server/api.py
+    python server/api.py &
   displayName: 'Run server'
 
 - script: |
