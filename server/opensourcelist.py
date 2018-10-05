@@ -28,10 +28,11 @@ class OpenSourceSoftware:
     def json_list(self):
         return json.dumps(self.OpenSourceSoftware)
 
-# oss = OpenSourceSoftware()
-# oss.add_OpenSourceSoftware(name = "OpenSSL", short_description="OpenSSL Package", site = "https://www.openssl.org")
-# oss.add_OpenSourceSoftware(short_description="SSH Package", site = "https://www.openssh.org", name="openssh")
-# print (oss.json_list())
-# oss.delete_OpenSourceSoftware(name="OpenSSL")
-# print ("after delete")
-# print (oss.json_list())
+if __name__ == "__main__":
+    oss = OpenSourceSoftware()
+    oss.add_OpenSourceSoftware(name = "OpenSSL", short_description="OpenSSL Package", site = "https://www.openssl.org")
+    oss.add_OpenSourceSoftware(short_description="SSH Package", site = "https://www.openssh.org", name="openssh")
+    print (oss.json_list())
+    oss.delete_OpenSourceSoftware(name="OpenSSL")
+    print ("after delete")
+    print (oss.json_list())

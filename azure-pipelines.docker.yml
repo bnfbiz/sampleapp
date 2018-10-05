@@ -20,14 +20,14 @@ steps:
     pip install xmlrunner
   displayName: 'Install prerequisites'
 
-- script: |
-    (nohup python server/api.py &)
-  displayName: 'Run server'
+# - script: |
+#     (nohup python server/api.py &)
+#   displayName: 'Run server'
 
-- script: |
-    python server/test_api.py
-  condition: succeededOrFailed()
-  displayName: 'Run tests'
+# - script: |
+#     python server/test_api.py
+#   condition: succeededOrFailed()
+#   displayName: 'Run tests'
 
 - task: PublishTestResults@2
   inputs:
